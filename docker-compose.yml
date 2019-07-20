@@ -1,14 +1,11 @@
 version: '3'
 
 services:
-  web:
-    build: ./thespians
-    command: django-admin startproject thespians .
+  django:
+    build: 
+      context: .
+      dockerfile: docker/python/Dockerfile
     volumes:
-      - ./thespians:/thespians
+      - ./django:/django
     ports:
-      - "8000:8000"
-
-volumes:
-  db_data:
-    external: true
+      - 8000:8000
