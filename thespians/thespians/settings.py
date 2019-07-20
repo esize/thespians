@@ -25,7 +25,7 @@ SECRET_KEY = '0*z0r8913eq5d%g9f@q3*89nsw$#57zgi3b1dixg&^$^)6%cht'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sizemore.tech']
 
 
 # Application definition
