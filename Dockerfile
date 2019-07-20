@@ -12,5 +12,4 @@ RUN django-admin startapp users
 
 EXPOSE 8000
 STOPSIGNAL SIGINT
-ENTRYPOINT ["python", "manage.py"]
-CMD ["runserver", "0.0.0.0:8000"]
+CMD ["python", "thespians/manage.py", "runserver", "0.0.0.0:8000"]
