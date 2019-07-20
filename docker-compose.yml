@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    build: ./thespians
+    command: django-admin startproject thespians .
+    volumes:
+      - ./thespians:/thespians
+    ports:
+      - "8000:8000"
+
+volumes:
+  db_data:
+    external: true
